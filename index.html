@@ -6,9 +6,12 @@
     <title>The Flower Shop</title>
     <link rel="icon" type="image/png" href="images/flower-pot.png">
     <link rel="Stylesheet" href="style.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Borel&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 <body>
     <div class="nav">
@@ -18,7 +21,7 @@
         </div>
 
         <div class="nav-right">
-            <button class="order-btn">Order Now</button>
+            <a href="#o"><button class="order-btn">Order Now</button></a>
         </div>
 
     </div>    
@@ -40,7 +43,27 @@
         <h1 class="gradient-text"> Do you want <span class="changing-text"></span>?</h1>
     </section>
 
-<section class="form-section">
+
+<section class="form-section" id="o">
+
+<!-- <div class="flower-carousel">
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="images/rose.jpg" alt="Rose"></div>
+      <div class="swiper-slide"><img src="images/lily.jpg" alt="Lily"></div>
+      <div class="swiper-slide"><img src="images/sunflower.jpg" alt="Sunflower"></div>
+      <div class="swiper-slide"><img src="images/dandelion.jpg" alt="Dandelion"></div>
+      <div class="swiper-slide"><img src="images/chrysanthemum.jpg" alt="Chrysanthemum"></div>
+    </div>
+
+    
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+</div> -->
+
+
     <div class="form-container">
     <div class="form-toggle">
       <button class="toggle-btn active" id="loginBtn">Login</button>
@@ -67,7 +90,7 @@
 
 
 
-
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="script.js"></script>
 </body>
 </html>

@@ -199,8 +199,14 @@ h1 {
 
 .pincode-check {
   text-align: center;
+  color: white;
+  text-shadow: black;
   padding: 4em 1em;
-  background-color: #f9f9f9;
+  background-image: url(images/pin-bg.jpg);
+  background-color: rgba(0, 0, 0, 0.4);  /* dark overlay */
+  background-blend-mode: darken;
+  background-size: cover;
+  background-position: center;
 }
 
 .pincode-check input{
@@ -229,4 +235,66 @@ h1 {
   font-size: 1.2rem;
   font-weight: bold;
   margin-top: 20px;
+  
 }
+
+.flower-carousel {
+  width: 80%;
+  max-width: 600px;
+  height: 350px;
+  margin: 40px auto;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.flower-carousel .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flower-carousel .swiper-slide img {
+  width: 100% !important;   /* 🔥 force the image to fit container width */
+  height: 100% !important;  /* 🔥 force the image to fit container height */
+  object-fit: cover;        /* keeps aspect ratio & crops neatly */
+  border-radius: 15px;
+}
+
+.flower-carousel .swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.flower-carousel .swiper-wrapper,
+.flower-carousel .swiper-slide {
+  height: 100%;
+}
+
+.flower-carousel .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;   /* fills nicely & crops */
+  border-radius: 15px;
+}
+
+  @media (max-width: 600px) {
+    .flower-carousel {
+      width: 90%;
+      height: 220px;
+    }
+  }
+
+  @media (min-width: 601px) and (max-width: 1024px) {
+    .flower-carousel {
+      width: 85%;
+      height: 280px;
+    }
+  }
+
+  @media (min-width: 1025px) {
+    .flower-carousel {
+      width: 70%;
+      height: 400px;
+    }
+  }
