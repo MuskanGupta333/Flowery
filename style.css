@@ -29,7 +29,7 @@ body{
 }
 
 .title{
-  margin:0;
+  
   /* font-family: "Borel", cursive; */
   
   font-weight: 600;
@@ -203,7 +203,7 @@ h1 {
   text-shadow: black;
   padding: 4em 1em;
   background-image: url(images/pin-bg.jpg);
-  background-color: rgba(0, 0, 0, 0.4);  /* dark overlay */
+  background-color: rgba(0, 0, 0, 0.4);  
   background-blend-mode: darken;
   background-size: cover;
   background-position: center;
@@ -255,9 +255,9 @@ h1 {
 }
 
 .flower-carousel .swiper-slide img {
-  width: 100% !important;   /* 🔥 force the image to fit container width */
-  height: 100% !important;  /* 🔥 force the image to fit container height */
-  object-fit: cover;        /* keeps aspect ratio & crops neatly */
+  width: 100% !important;  
+  height: 100% !important; 
+  object-fit: cover;        
   border-radius: 15px;
 }
 
@@ -274,7 +274,7 @@ h1 {
 .flower-carousel .swiper-slide img {
   width: 100%;
   height: 100%;
-  object-fit: cover;   /* fills nicely & crops */
+  object-fit: cover;   
   border-radius: 15px;
 }
 
